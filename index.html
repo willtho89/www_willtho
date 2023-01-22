@@ -3,18 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>WillTho</title>	
 	<style>
 		body {
 			/* from https://uigradients.com/ */
 			background: #485563;  /* fallback for old browsers */
+            background-color: #485563; /* fallback for old browsers */
 			background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
 			background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             margin: 0; 
             height: 100%; 
-            overflow: hidden
+            overflow: hidden;
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+
 		}
 		section {
 			display: flex;
